@@ -1,4 +1,5 @@
 Feature: User Login
+
   Scenario Outline: User login attempt
     Given I am on the login page
     When I enter the username "<username>"

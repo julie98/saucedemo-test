@@ -17,4 +17,6 @@ This is an automated UI testing project for [saucedemo.com](https://www.saucedem
 ```bash
 mvn test
 ```
-The default browser is set to chrome.
+## Other information
+The default browser is set to chrome. <br>
+After logging in, a "change password" prompt appears on the inventory page, which disrupts the test flow. To prevent this, I configured ChromeOptions to disable Chrome’s password manager during driver setup.

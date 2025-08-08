@@ -28,4 +28,10 @@ public class LoginPage extends BasePage {
     public String getErrorMessageText() {
         return errorMessage.getText();
     }
+
+    public void login(String username, String password) {
+        inputUsername.sendKeys(username);
+        inputPassword.sendKeys(password);
+        buttonLogin.click();
+    }
 }

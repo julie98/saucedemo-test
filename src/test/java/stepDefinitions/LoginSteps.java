@@ -38,7 +38,7 @@ public class LoginSteps {
     public void i_should_see_result(String result) {
         if (result.equals("the product page")) {
             assertEquals(DriverFactory.getDriver().getCurrentUrl(),
-                    URL.Home.toString());
+                    URL.Inventory.toString());
         } else if (result.equals("an error message")) {
             assertTrue(loginPage.getErrorMessageText().contains("Epic sadface"), "login error message: " + loginPage.getErrorMessageText());
         } else {

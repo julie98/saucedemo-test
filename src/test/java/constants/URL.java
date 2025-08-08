@@ -4,10 +4,11 @@ import utils.ApplicationProperties;
 
 public enum URL {
     Login(""),
-    Home("inventory.html"),
+    Inventory("inventory.html"),
     Cart("cart.html"),
     Information("checkout-step-one.html"),
-    Checkout("checkout-step-two.html");
+    Confirmation("checkout-step-two.html"),
+    Complete("checkout-complete.html");
 
     private final String url;
     URL(String path) {
