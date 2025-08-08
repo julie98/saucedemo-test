@@ -6,7 +6,6 @@ This is an automated UI testing project for [saucedemo.com](https://www.saucedem
 - TestNG
 - Cucumber
 - Maven
-- WebDriverManager
 ## Features
 
 - Login with valid credentials
@@ -17,3 +16,5 @@ This is an automated UI testing project for [saucedemo.com](https://www.saucedem
 
 ```bash
 mvn test
+```
+The default browser is set to chrome.

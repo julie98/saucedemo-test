@@ -37,5 +37,10 @@ public class DriverFactory {
         webDriver.get().manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         webDriver.get().manage().window().maximize();
     }
-
+    public static void quitDriver() {
+        if (webDriver.get() != null) {
+            webDriver.get().quit();
+            webDriver.remove();
+        }
+    }
 }
